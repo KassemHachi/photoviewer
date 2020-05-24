@@ -8,10 +8,19 @@
     End Sub
 
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
-        If RadioButton1.Checked = True Then
-            NumericUpDown1.Enabled = False
-            NumericUpDown2.Enabled = False
+        If CheckEdit1.Checked = False Then
+
+        Else
+            If RadioButton1.Checked = True Then
+                NumericUpDown1.Enabled = False
+                NumericUpDown2.Enabled = False
+            End If
+
+            Form1.PictureBox1.SizeMode = PictureBoxSizeMode.AutoSize
+            Form1.PictureBox1.Dock = DockStyle.None
         End If
+
+
     End Sub
 
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
@@ -21,7 +30,7 @@
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         If RadioButton3.Checked = True Then
             Form1.PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
             Form1.PictureBox1.Size = New Size(NumericUpDown1.Value, NumericUpDown2.Value)
@@ -49,5 +58,25 @@
             NumericUpDown1.Enabled = True
             NumericUpDown2.Enabled = True
         End If
+    End Sub
+
+    Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
+        If RadioButton3.Checked = True Then
+            Form1.PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+            Form1.PictureBox1.Size = New Size(NumericUpDown1.Value, NumericUpDown2.Value)
+            Form1.PictureBox1.Dock = DockStyle.None
+        ElseIf RadioButton2.Checked = True Then
+            Form1.PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+            Form1.PictureBox1.Dock = DockStyle.Fill
+        ElseIf RadioButton1.Checked = True Then
+            Form1.PictureBox1.SizeMode = PictureBoxSizeMode.AutoSize
+            Form1.PictureBox1.Dock = DockStyle.None
+
+        End If
+        Me.Close()
+    End Sub
+
+    Private Sub CheckEdit1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckEdit1.CheckedChanged
+
     End Sub
 End Class

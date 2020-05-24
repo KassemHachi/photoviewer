@@ -22,16 +22,19 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.CheckEdit1 = New DevExpress.XtraEditors.CheckEdit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CheckEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RadioButton1
@@ -58,7 +61,8 @@ Partial Class Form2
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.CheckEdit1)
+        Me.GroupBox1.Controls.Add(Me.SimpleButton1)
         Me.GroupBox1.Controls.Add(Me.NumericUpDown2)
         Me.GroupBox1.Controls.Add(Me.NumericUpDown1)
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
@@ -66,19 +70,10 @@ Partial Class Form2
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(308, 152)
+        Me.GroupBox1.Size = New System.Drawing.Size(300, 152)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "image settings"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(70, 123)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(156, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "save and apply"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'NumericUpDown2
         '
@@ -110,18 +105,37 @@ Partial Class Form2
         Me.RadioButton3.Text = "Custom size"
         Me.RadioButton3.UseVisualStyleBackColor = True
         '
+        'SimpleButton1
+        '
+        Me.SimpleButton1.ImageOptions.SvgImage = CType(resources.GetObject("SimpleButton1.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.SimpleButton1.Location = New System.Drawing.Point(56, 109)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(150, 37)
+        Me.SimpleButton1.TabIndex = 2
+        Me.SimpleButton1.Text = "Save and Close"
+        '
+        'CheckEdit1
+        '
+        Me.CheckEdit1.Location = New System.Drawing.Point(6, 84)
+        Me.CheckEdit1.Name = "CheckEdit1"
+        Me.CheckEdit1.Properties.Caption = "Preview"
+        Me.CheckEdit1.Size = New System.Drawing.Size(87, 19)
+        Me.CheckEdit1.TabIndex = 3
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(336, 176)
+        Me.ClientSize = New System.Drawing.Size(325, 175)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Form2"
         Me.Text = "Form2"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CheckEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -131,5 +145,6 @@ Partial Class Form2
     Friend WithEvents NumericUpDown2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
     Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents CheckEdit1 As DevExpress.XtraEditors.CheckEdit
 End Class

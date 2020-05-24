@@ -4,7 +4,7 @@
 
     End Sub
 
-    Private Sub OpenImageToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenImageToolStripMenuItem.Click
+    Private Sub OpenImageToolStripMenuItem_Click(sender As Object, e As EventArgs)
         OpenFileDialog1.Filter = "(Image Files)|*.jpg;*.png;*.bmp;*.gif;*.ico|Jpg, | *.jpg|Png, | *.png|Bmp, | *.bmp|Gif, | *.gif|Ico | *.ico"
 
         If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
@@ -25,7 +25,7 @@
     Private Sub PictureBox1_DragDrop(sender As Object, e As DragEventArgs) Handles PictureBox1.DragDrop
         Try
 
-           PictureBox1.Image = Image.FromFile((CType(e.Data.GetData(DataFormats.FileDrop), Array).GetValue(0).ToString))
+            PictureBox1.Image = Image.FromFile((CType(e.Data.GetData(DataFormats.FileDrop), Array).GetValue(0).ToString))
         Catch ex As Exception
             MsgBox("Error Doing Drag/Drop")
         End Try
@@ -49,14 +49,33 @@
         End With
     End Sub
 
-    Private Sub SettingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingToolStripMenuItem.Click
+    Private Sub SettingToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Form2.Show()
 
     End Sub
 
-    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Dim Str As String = "Name : Photo viewer" & vbNewLine & "version : 1.0.0" & vbNewLine & "developped by : Kassem Hachi" & vbNewLine & "Email : kassem.hachi@outlook.com" & vbNewLine & "project url : https://github.com/KassemHachi/photoviewer"
         MsgBox(Str, MsgBoxStyle.Information, "About")
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+
+    Private Sub BarButtonItem1_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem1.ItemClick
+        OpenFileDialog1.Filter = "(Image Files)|*.jpg;*.png;*.bmp;*.gif;*.ico|Jpg, | *.jpg|Png, | *.png|Bmp, | *.bmp|Gif, | *.gif|Ico | *.ico"
+
+        If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            PictureBox1.Image = Image.FromFile(OpenFileDialog1.FileName)
+
+        End If
+    End Sub
+
+    Private Sub BarButtonItem2_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem2.ItemClick
+        Form2.Show()
 
     End Sub
 End Class

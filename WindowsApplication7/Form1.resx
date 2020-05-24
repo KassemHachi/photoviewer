@@ -120,9 +120,53 @@
   <metadata name="OpenFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>159, 17</value>
-  </metadata>
+  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="BarButtonItem1.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAFcCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iT3BlbiI+DQogIDxnIG9wYWNpdHk9IjAuNzUiIGNsYXNzPSJzdDAiPg0K
+        ICAgIDxwYXRoIGQ9Ik0yLjIsMjUuMmw1LjUtMTJjMC4zLTAuNywxLTEuMiwxLjgtMS4ySDI2VjljMC0w
+        LjYtMC40LTEtMS0xSDEyVjVjMC0wLjYtMC40LTEtMS0xSDNDMi40LDQsMiw0LjQsMiw1djIwICAgYzAs
+        MC4yLDAsMC4zLDAuMSwwLjRDMi4xLDI1LjMsMi4yLDI1LjMsMi4yLDI1LjJ6IiBmaWxsPSIjRkZCMTE1
+        IiBvcGFjaXR5PSIwLjc1IiBjbGFzcz0iWWVsbG93IiAvPg0KICA8L2c+DQogIDxwYXRoIGQ9Ik0zMS4z
+        LDE0SDkuNkw0LDI2aDIxLjhjMC41LDAsMS4xLTAuMywxLjMtMC43TDMyLDE0LjdDMzIuMSwxNC4zLDMx
+        LjgsMTQsMzEuMywxNHoiIGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3ciIC8+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="BarButtonItem2.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAPAEAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJWaWV3U2V0dGluZ3NfMV8iPg0KICAg
+        IDxwYXRoIGQ9Ik0zMiw5VjdsLTIuNS0wLjZDMjkuNCw2LDI5LjIsNS42LDI5LDUuMmwxLjUtMi4xbC0x
+        LjYtMS42TDI2LjgsM2MtMC40LTAuMi0wLjgtMC40LTEuMi0wLjVMMjUsMGgtMiAgIGwtMC42LDIuNUMy
+        MiwyLjYsMjEuNiwyLjgsMjEuMiwzbC0yLTEuNWwtMS43LDEuN2wxLjUsMmMtMC4yLDAuNC0wLjQsMC44
+        LTAuNSwxLjJMMTYsN3YybDIuNSwwLjZjMC4xLDAuNCwwLjMsMC44LDAuNSwxLjIgICBsLTEuNSwyLjFs
+        MS42LDEuNmwyLjEtMS41YzAuNCwwLjIsMC44LDAuNCwxLjIsMC41TDIzLDE2aDJsMC42LTIuNWMwLjQt
+        MC4xLDAuOC0wLjMsMS4yLTAuNWwyLjEsMS41bDEuNi0xLjZMMjksMTAuOCAgIGMwLjItMC40LDAuNC0w
+        LjgsMC41LTEuMkwzMiw5eiBNMjQsMTBjLTEuMSwwLTItMC45LTItMmMwLTEuMSwwLjktMiwyLTJzMiww
+        LjksMiwyQzI2LDkuMSwyNS4xLDEwLDI0LDEweiBNMTgsMjEgICBjMC0wLjMsMC0wLjYtMC4xLTAuOGwy
+        LjEtMS44bC0wLjgtMS45bC0yLjcsMC4yYy0wLjMtMC40LTAuNy0wLjgtMS4yLTEuMmwwLjItMi43TDEz
+        LjYsMTJsLTEuOCwyLjFDMTEuNiwxNCwxMS4zLDE0LDExLDE0ICAgcy0wLjYsMC0wLjgsMC4xTDguNCwx
+        MmwtMS45LDAuOGwwLjIsMi43Yy0wLjQsMC4zLTAuOCwwLjctMS4yLDEuMmwtMi43LTAuMkwyLDE4LjRs
+        Mi4xLDEuOEM0LDIwLjQsNCwyMC43LDQsMjFzMCwwLjYsMC4xLDAuOCAgIEwyLDIzLjZsMC44LDEuOWwy
+        LjctMC4yYzAuMywwLjQsMC43LDAuOCwxLjIsMS4ybC0wLjIsMi43TDguNCwzMGwxLjgtMi4xYzAuMyww
+        LDAuNSwwLjEsMC44LDAuMXMwLjYsMCwwLjgtMC4xbDEuOCwyLjFsMS45LTAuOCAgIGwtMC4yLTIuN2Mw
+        LjQtMC4zLDAuOC0wLjcsMS4yLTEuMmwyLjcsMC4ybDAuOC0xLjlsLTIuMS0xLjhDMTgsMjEuNiwxOCwy
+        MS4zLDE4LDIxeiBNMTEsMjRjLTEuNywwLTMtMS4zLTMtM3MxLjMtMywzLTNzMywxLjMsMywzICAgUzEy
+        LjcsMjQsMTEsMjR6IiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+DQogIDwvZz4NCjwvc3Zn
+        Pgs=
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>48</value>
   </metadata>
